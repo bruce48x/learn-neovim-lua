@@ -122,7 +122,9 @@ packer.startup({
     use("ful1e5/onedark.nvim")
     -- nightfox
     use("EdenEast/nightfox.nvim")
-
+    -- sonokai
+    use('sainnhe/sonokai')
+    
     -------------------------------------------------------
     use({ "akinsho/toggleterm.nvim" })
     -- surround
