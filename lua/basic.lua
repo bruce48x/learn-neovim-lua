@@ -12,15 +12,15 @@ vim.wo.cursorline = true
 -- 显示左侧图标指示列
 vim.wo.signcolumn = "yes"
 -- 右侧参考线，超过表示代码太长了，考虑换行
-vim.wo.colorcolumn = "80"
+--vim.wo.colorcolumn = "80"
 -- 缩进2个空格等于一个Tab
-vim.o.tabstop = 2
-vim.bo.tabstop = 2
-vim.o.softtabstop = 2
+vim.o.tabstop = 4
+vim.bo.tabstop = 4
+vim.o.softtabstop = 4
 vim.o.shiftround = true
 -- >> << 时移动长度
-vim.o.shiftwidth = 2
-vim.bo.shiftwidth = 2
+vim.o.shiftwidth = 4
+vim.bo.shiftwidth = 4
 -- 空格替代tab
 vim.o.expandtab = true
 vim.bo.expandtab = true
@@ -68,7 +68,7 @@ vim.opt.termguicolors = true
 -- 是否显示不可见字符
 vim.o.list = false
 -- 不可见字符的显示，这里只把空格显示为一个点
-vim.o.listchars = "space:·,tab:··"
+--vim.o.listchars = "space:·,tab:··"
 -- 补全增强
 vim.o.wildmenu = true
 -- Dont' pass messages to |ins-completin menu|
