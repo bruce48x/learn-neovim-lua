@@ -101,8 +101,11 @@ map("n", "<C-Up>", ":resize -2<CR>", opt)
 map("n", "s=", "<C-w>=", opt)
 
 -- Terminal相关
-map("n", "st", ":sp | terminal<CR>", opt)
-map("n", "stv", ":vsp | terminal<CR>", opt)
+--map("n", "st", ":sp | terminal<CR>", opt)
+--map("n", "stv", ":vsp | terminal<CR>", opt)
+-- 使用 powershell 替代 CMD
+map("n", "st", ":sp | term powershell<CR>", opt)
+map("n", "stv", ":vsp | term powershell<CR>", opt)
 -- Esc 回 Normal 模式
 map("t", "<Esc>", "<C-\\><C-n>", opt)
 map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)
