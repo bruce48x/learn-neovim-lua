@@ -81,3 +81,5 @@ vim.o.showtabline = 2
 vim.o.showmode = false
 -- 配置剪切板
 vim.opt.clipboard = "unnamedplus"
+-- 保持换行符是LF，不要 CRLF
+vim.o.fileformats = "unix"
