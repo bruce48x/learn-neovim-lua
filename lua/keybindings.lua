@@ -36,13 +36,13 @@ vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 
 -- 上下滚动浏览
-map("n", "<C-j>", "5j", opt)
-map("n", "<C-k>", "5k", opt)
-map("v", "<C-j>", "5j", opt)
-map("v", "<C-k>", "5k", opt)
--- ctrl u / ctrl + d  只移动9行，默认移动半屏
-map("n", "<C-u>", "10k", opt)
-map("n", "<C-d>", "10j", opt)
+map("n", "<A-j>", "5j", opt)
+map("n", "<A-k>", "5k", opt)
+map("v", "<A-j>", "5j", opt)
+map("v", "<A-k>", "5k", opt)
+-- alt + u / alt + d  只移动9行，默认移动半屏
+map("n", "<A-u>", "10k", opt)
+map("n", "<A-d>", "10j", opt)
 
 -- magic search
 map("n", "/", "/\\v", { noremap = true, silent = false })
@@ -78,10 +78,10 @@ map("n", "sc", "<C-w>c", opt)
 -- 关闭其他
 map("n", "so", "<C-w>o", opt) -- close others
 -- alt + hjkl  窗口之间跳转
-map("n", "<A-h>", "<C-w>h", opt)
-map("n", "<A-j>", "<C-w>j", opt)
-map("n", "<A-k>", "<C-w>k", opt)
-map("n", "<A-l>", "<C-w>l", opt)
+-- map("n", "<A-h>", "<C-w>h", opt)
+-- map("n", "<A-j>", "<C-w>j", opt)
+-- map("n", "<A-k>", "<C-w>k", opt)
+-- map("n", "<A-l>", "<C-w>l", opt)
 -- <leader> + hjkl 窗口之间跳转
 map("n", "<leader>h", "<C-w>h", opt)
 map("n", "<leader>j", "<C-w>j", opt)
