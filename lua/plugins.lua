@@ -145,6 +145,11 @@ packer.startup({
     -- use("jbyuki/one-small-step-for-vimkind")
 
     use("j-hui/fidget.nvim")
+    ----------------------------------------------
+    use {
+        'kkoomen/vim-doge', 
+        run = ':call doge#install()' 
+    }
     if paccker_bootstrap then
       packer.sync()
     end
