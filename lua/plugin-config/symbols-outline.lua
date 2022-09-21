@@ -6,4 +6,5 @@ end
 
 symbolsoutline.setup({
     autofold_depth = 2,
+    auto_unfold_hover = false,
 })
