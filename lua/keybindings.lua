@@ -116,6 +116,10 @@ map("t", "<leader>h", [[ <C-\><C-N><C-w>h ]], opt)
 map("t", "<leader>j", [[ <C-\><C-N><C-w>j ]], opt)
 map("t", "<leader>k", [[ <C-\><C-N><C-w>k ]], opt)
 map("t", "<leader>l", [[ <C-\><C-N><C-w>l ]], opt)
+
+-- symbols-outline 快捷键
+map("n", "<leader>s", ":SymbolsOutline<CR>", opt)
+
 --------------------------------------------------------------------
 -- 插件快捷键
 local pluginKeys = {}

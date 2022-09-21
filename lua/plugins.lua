@@ -145,11 +145,13 @@ packer.startup({
     -- use("jbyuki/one-small-step-for-vimkind")
 
     use("j-hui/fidget.nvim")
-    ----------------------------------------------
+    ---------------------- bruce 增加的插件 ------------------------
     use {
         'kkoomen/vim-doge', 
         run = ':call doge#install()' 
     }
+    use 'simrat39/symbols-outline.nvim'
+    ----------------------------------------------------
     if paccker_bootstrap then
       packer.sync()
     end
