@@ -53,7 +53,7 @@ local opts = {
 
 return {
   on_setup = function(server)
-    opts = require("lua-dev").setup({ lspconfig = opts })
+    opts = require("neodev").setup({ lspconfig = true })
     server.setup(opts)
   end,
 }
